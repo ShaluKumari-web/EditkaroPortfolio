@@ -1,0 +1,354 @@
+/* ================== GLOBAL RESET ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+/* ================== HERO SECTION ================== */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/internship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero .overlay {
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+/* ================== NAVBAR ================= */
+.navbar {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: #ff5722;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.4s;
+}
+
+.navbar ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+/* ================== HOME ================== */
+#home {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ================== OVERLAY ================== */
+.overlay {
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.85)
+    );
+    color: #fff;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.overlay h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.overlay .btn {
+    margin-top: 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 12px 28px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.overlay .btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    transform: translateY(-3px);
+}
+
+/* ================== SERVICES ================== */
+.services,
+.aboutus,
+.portfolio,
+.contact {
+    position: relative;
+    min-height: auto;
+    background-image: url('images/internship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* padding: 6rem 2rem; */
+    text-align: center;
+}
+
+.services h1,
+.aboutus h1,
+.portfolio h1,
+.contact h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* ================== CARDS ================== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.card {
+    height: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #1c1c1c, #0f0f0f);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #ff5722;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,1);
+}
+
+/* ================== PORTFOLIO ================== */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio button {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 10px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.portfolio button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.buttons button.active {
+    background: #ff5722;
+    border-color: #ff5722;
+    box-shadow: 0 0 15px rgba(255,87,34,0.7);
+}
+
+/* ================== VIDEOS ================== */
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.video-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.video-card video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.video-card h3 {
+    padding: 12px;
+    background: rgba(0,0,0,0.7);
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+}
+
+.video-card:hover video {
+    transform: scale(1.05);
+}
+
+/* ================== ABOUT US ================== */
+.aboutus h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.aboutus p {
+    font-size: 18px;
+}
+
+/* ================== CONTACT ================== */
+.contact form {
+    width: 600px;
+    margin: auto;
+    background: rgba(255,255,255,0.95);
+    color: #000;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.contact form label {
+    text-align: left;
+    margin: 12px 0 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 12px;
+    border-radius: 2rem;
+    border: 1px solid #000;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact form textarea {
+    border-radius: 1rem;
+}
+
+.contact form button {
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 5rem;
+    border: 2px solid #000;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact form button:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 992px) {
+    .cards,
+    .videos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .cards,
+    .videos {
+        grid-template-columns: 1fr;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
+    .overlay h1 {
+        letter-spacing: 2px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}

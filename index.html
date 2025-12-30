@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <div class="hero">
+      <header class="navbar">
+        <h1>Editkaro.in</h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+
+      <section id="home">
+        <div class="overlay">
+          <h1>Editkaro.in</h1>
+          <p>Video Editing & Social Media Marketing Agency</p>
+          <a href="https://editkaro.in/" class="btn" target="_blank"
+            >Explore our Website</a
+          >
+        </div>
+      </section>
+    </div>
+<section class="services" id="services">
+  <div class="overlay">
+    <h1>Our Services</h1>
+    <p>We offer a range of professional editing services tailored to your needs.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Short-form Video Editing</h3>
+        <p>We create fast-paced, engaging, and trend-focused short videos optimized for Instagram Reels, YouTube Shorts, and TikTok.</p>
+      </div>
+
+          <div class="card">
+        <h3>Long-form Video Editing</h3>
+        <p>We edit long videos with clean storytelling, smooth pacing, and professional motion graphics. Perfect for YouTube creators, educators, and podcasters</p>
+      </div>
+          <div class="card">
+        <h3>Gaming Videos</h3>
+        <p>We turn your gameplay into cinematic, high-impact gaming highlights. Perfect for YouTubers, streamers, and esports creators.</p>
+      </div>
+          <div class="card">
+        <h3>Anime Videos</h3>
+        <p>Unique stylized edits inspired by anime motion, transitions, and effects. Perfect for short reels, highlights, and fan edits.</p>
+      </div>
+          <div class="card">
+        <h3>Documentary Videos</h3>
+        <p>We craft emotionally strong, story-driven edits perfect for interviews, personal stories, corporate films, and mini documentaries.</p>
+      </div>
+         <div class="card">
+        <h3>Color Grading</h3>
+        <p>We bring cinematic life to your footage with advanced color correction and stylized color grading. Ideal for filmmakers and creators.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="overlay">
+        <h1>Editkaro.in Portfolio</h1>
+
+        <div class="buttons">
+          <button data-category="all" class="active">All</button>
+          <button data-category="short">Short Videos</button>
+          <button data-category="long">Long Videos</button>
+          <button data-category="gaming">Gaming Videos</button>
+          <button data-category="ecommerce">eCommerce Ads</button>
+          <button data-category="anime">Anime</button>
+          <button data-category="colorgrading">Color Grading</button>
+        </div>
+
+        <div class="videos">
+          <div class="video-card" data-category="short">
+            <video src="images/short.mp4" muted></video>
+            <h3>Short Videos</h3>
+          </div>
+          <div class="video-card" data-category="long">
+            <video src="images/long.mp4" muted></video>
+            <h3>Long Videos</h3>
+          </div>
+          <div class="video-card" data-category="gaming">
+            <video src="images/game.mp4" muted></video>
+            <h3>Gaming Videos</h3>
+          </div>
+          <div class="video-card" data-category="ecommerce">
+            <video src="images/ads.mp4" muted></video>
+            <h3>eCommerce Ads</h3>
+          </div>
+          <div class="video-card" data-category="anime">
+            <video src="images/anime.mp4" muted></video>
+            <h3>Anime Videos</h3>
+          </div>
+          <div class="video-card" data-category="colorgrading">
+            <video src="images/colorgrading.mp4" muted></video>
+            <h3>Color Grading</h3>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="aboutus" id="aboutus">
+        <div class="overlay">
+            <h1>About Us</h1>
+            <h3>Editkaro.in is dedicated to delivering studio-quality editing and post-production services<br> for creators, brands, and businesses.</h3>
+            <p>Our team blends creativity and precision to transform raw footage into compelling <br>stories. We use the latest tools and techniques to ensure your content stands out and <br>connects with your audience. Let us help you elevate your message and amplify your<br> online presence.</p>
+
+            <div class="cards">
+      <div class="card">
+        <h3>Creative Editing</h3>
+        <p>We turn raw footage into cinematic stories with color grading, transitions, and effects.</p>
+      </div>
+
+          <div class="card">
+        <h3>Expert Team</h3>
+        <p>Our editors are passionate professionals with years of experience in post-production.</p>
+      </div>
+          <div class="card">
+        <h3>Fast Delivery</h3>
+        <p>We deliver polished edits quickly, so you can launch your content without delay.</p>
+      </div>
+      </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="overlay">
+            <h1>Contact Us</h1>
+            
+            <form >
+                <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="enter email">
+                     <label for="passowrd">password:</label>
+                    <input type="password" id="password" name="password" placeholder="enter password">
+                     <label for="feedback">Feedback:</label>
+                    <textarea name="feedback" id="feedback" rows="6"></textarea>
+                    <button>Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+
+
+</html>
